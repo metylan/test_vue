@@ -11,6 +11,7 @@
     "vue": "^3.2.31"
   },
   "devDependencies": {
+    "@playwright/test": "^1.20.0",
     "@vitejs/plugin-vue": "^2.2.2",
     "cypress": "^9.5.2",
     "vite": "^2.8.4"
