@@ -1,0 +1,17 @@
+name: Action
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.0.0
+    - name: Install modules
+      run: npm i
+    - name: Run ESLint
+      run: npm run lint
